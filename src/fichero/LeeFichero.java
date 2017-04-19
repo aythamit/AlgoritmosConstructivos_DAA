@@ -33,8 +33,7 @@ public class LeeFichero {
 		while(i <= n){
 
 			 for(int j = i+1; j <= n; j++){
-				 String sDato = getReader().readLine();
-				 double dato = Double.parseDouble(sDato);
+				 double dato = Double.parseDouble(getReader().readLine());
 				 conjuntoAristas.add( new Arista(i,j,dato) );
 				 //System.out.println("La arista ( " + i + " , " + j + " ) es : " + dato);
 			 }

@@ -11,6 +11,7 @@ package pruebas;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import algoritmos.AlgoritmosGreedy;
 import algoritmos.Arista;
 import fichero.LeeFichero;
 
@@ -23,10 +24,10 @@ public class PruebaLeeFichero {
 	 */
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
-		ArrayList<Arista> conjuntoAristas = new ArrayList<Arista>();
-		LeeFichero p = new LeeFichero(args[0], conjuntoAristas);
+		AlgoritmosGreedy algor = new AlgoritmosGreedy();
+		LeeFichero p = new LeeFichero(args[0], algor.getConjuntoAristas());
 		
-		for(Arista it: conjuntoAristas){
+		for(Arista it: algor.getConjuntoAristas()){
 			System.out.println(it);
 		}
 
