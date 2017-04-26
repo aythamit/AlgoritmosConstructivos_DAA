@@ -30,7 +30,9 @@ public class PruebaLeeFichero {
 		for(Arista it: algor.getConjuntoAristas()){
 			System.out.println(it);
 		}
-
+		
+		System.out.println("\n\nLa solucion Greedy es =  " + algor.maxMean());
+		System.out.println("\nLa solucion Greedy Deberia ser =  5.28 aprox" );
 	}
 
 }
